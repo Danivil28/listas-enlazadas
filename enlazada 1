@@ -39,24 +39,13 @@ while($actual!=null){
 echo"</ul>";
 
   }
-public function buscar($dato)
-  {
-    $actual = $this->cabeza;
-    while ($actual != null) {
-      if ($actual->dato == $dato) {
-        return true;
-      }
-      $actual = $actual->siguiente;
-    }
-    return false; 
-  }
 }
 
 $lista=new listaenlazada();
 
-$lista->insertar("perro");
-$lista->insertar("gato");
-$lista->insertar("pollito");
+$lista->insertar("elemento 3");
+$lista->insertar("elemento 2");
+$lista->insertar("elemento 1");
 $lista->imprimirHTML();
 
 ?>
